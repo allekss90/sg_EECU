@@ -1,0 +1,110 @@
+{
+    "user": {
+        "role": "manager",
+        "name": "Ім’я Прізвище",
+        "community": "Назва громади",
+        "avatar": "url",
+        "actions": {
+            "signIn": "Увійти",
+            "signOut": "Вийти з аккаунта",
+            "changePassword": "Змінити пароль"
+        }
+    },
+    "nav": [
+        {
+            "name": "Рейтинг громад",
+            "url": "#"
+        },
+        {
+            "name": "Методологія",
+            "url": "#",
+            "subpages": [
+                {
+                    "name": "lorem 1",
+                    "url": "#"
+                },
+                {
+                    "name": "lorem 2",
+                    "url": "#"
+                },
+                {
+                    "name": "lorem 3",
+                    "url": "#"
+                },
+                {
+                    "name": "lorem 4",
+                    "url": "#"
+                },
+                {
+                    "name": "lorem 5",
+                    "url": "#"
+                }
+            ]
+        },
+        {
+            "name": "ЄЕВ",
+            "url": "#"
+        },
+        {
+            "name": "Про нас",
+            "url": "#"
+        },
+        {
+            "name": "Контакти",
+            "url": "#"
+        }
+    ],
+    "menu": [
+        {
+            "name": "Дані рейтингу",
+            "subpages": [
+                {
+                    "name": "2022",
+                    "url": "2022"
+                },
+                {
+                    "name": "2021",
+                    "url": "2021"
+                },
+                {
+                    "name": "2020",
+                    "url": "2020"
+                },
+                {
+                    "name": "2019",
+                    "url": "2019"
+                }
+            ]
+        },
+        {
+            "name": "Профіль громади",
+            "url": ""
+        },
+        {
+            "name": "Мій профіль",
+            "url": ""
+        },
+        {
+            "name": "Користувачі для адміна приклад",
+            "goToFirstSubpage": true,
+            "subpages": [
+                {
+                    "name": "Активні",
+                    "url": "active"
+                },
+                {
+                    "name": "Запити",
+                    "url": "requests"
+                },
+                {
+                    "name": "Заблоковані",
+                    "url": "blocked"
+                },
+                {
+                    "name": "Не верифіковані",
+                    "url": "unverified"
+                }
+            ]
+        }
+    ]
+}
