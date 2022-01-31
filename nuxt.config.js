@@ -24,10 +24,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    // '~/assets/css/normalize.css',
+    '~/assets/css/initial.css',
+		'~/assets/scss/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    // { src: '~/plugins/vue-google-maps.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,28 +45,47 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios', //https://axios.nuxtjs.org/usage
   ],
+
+  // axios configure global options
+  // Usage https://axios.nuxtjs.org/usage
+  axios: {
+    proxy: true,
+    debug: true
+  },
+
+  proxy: {
+    '/api/': 'http://api.example.com',
+    // '/api2/': 'http://api.another-website.com'
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+
+    // todo: check this & provide basic config !
     customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+    // theme: {
+    //   dark: true,
+    //   themes: {
+    //     dark: {
+    //       primary: colors.blue.darken2,
+    //       accent: colors.grey.darken3,
+    //       secondary: colors.amber.darken3,
+    //       info: colors.teal.lighten1,
+    //       warning: colors.amber.base,
+    //       error: colors.deepOrange.accent4,
+    //       success: colors.green.accent3
+    //     }
+    //   }
+    // }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    
+  },
+
+
+  generate: { fallback: true } //for netlify 404
 }

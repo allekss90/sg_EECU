@@ -1,0 +1,204 @@
+/* ==========================================================================
+   General preset:
+   ========================================================================== */
+
+img {
+	vertical-align: top;
+	border-style: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+img,
+embed,
+iframe,
+canvas,
+object,
+audio,
+video {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+input,
+textarea,
+select {
+	color: #000;
+	vertical-align: middle;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+th,
+blockquote,
+button,
+figure,
+legend,
+textarea,
+pre,
+iframe,
+input,
+form,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+form {
+	border-style: none;
+}
+
+iframe {
+	border: 0;
+}
+
+mark {
+	background-color: transparent;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+svg {
+	fill: currentColor;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	/*vertical-align: middle;*/
+	vertical-align: top;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+	resize: vertical;
+}
